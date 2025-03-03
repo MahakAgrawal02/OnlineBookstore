@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store - Register</title>
+    
+    <!-- Favicon Links -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
+    <link rel="manifest" href="./favicons/site.webmanifest">
+    
+    <!-- Bootstrap & Custom Styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Arial', sans-serif;
+        }
+        .navbar {
+            padding: 1rem;
+        }
+        .nav-link {
+            font-size: 1.1rem;
+            transition: 0.3s;
+        }
+        .nav-link:hover {
+            color: #ffc107 !important;
+        }
+        .card {
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .form-control {
+            border-radius: 8px;
+        }
+        .btn-custom {
+            background-color: #0d6efd;
+            color: white;
+            border-radius: 8px;
+        }
+        .btn-custom:hover {
+            background-color: #74a5ed;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="logo.png" alt="Book Store Logo" width="60" height="30">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="CustomerLogin.html">Login</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="CustomerRegister.html">Register</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <h2 class="text-center text-primary">Register</h2>
+                    <form action="userreg" method="post">
+                        <div class="mb-3">
+                            <label for="Email" class="form-label">Email</label>
+                            <input type="email" name="mailid" id="Email" class="form-control" placeholder="Enter your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="passWord" class="form-label">Password</label>
+                            <input type="password" name="password" id="passWord" class="form-control" placeholder="Enter Password" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="firstName" class="form-label">First Name</label>
+                            <input type="text" name="firstname" id="firstName" class="form-control" placeholder="Enter your First Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="lastName" class="form-label">Last Name</label>
+                            <input type="text" name="lastname" id="lastName" class="form-control" placeholder="Enter your Last Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="address" class="form-label">Address</label>
+                            <textarea name="address" id="address" class="form-control" placeholder="Enter your Address" required></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phno" class="form-label">Mobile No</label>
+                            <input type="tel" name="phone" id="phno" class="form-control" placeholder="Enter your Phone Number" required>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" name="acceptance" class="form-check-input" id="acceptance" required>
+                            <label class="form-check-label" for="acceptance">I ACCEPT ALL TERMS & CONDITIONS</label>
+                        </div>
+                        <button type="submit" class="btn btn-custom w-100 mt-3">REGISTER ME</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Bootstrap Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
